@@ -126,6 +126,23 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className="stats bg-base-100 border-base-300 border">
+          <div className="stat">
+            <div className="stat-title">Custom hook Example</div>
+            <div className="stat-value">useLocalStorage()</div>
+            <div className="stat-actions">
+              <button
+                onClick={() => {
+                  navigate("/use-customhook");
+                }}
+                className="btn btn-xs btn-success"
+              >
+                Goto Page
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* footer  */}
