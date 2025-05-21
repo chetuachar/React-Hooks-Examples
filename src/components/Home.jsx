@@ -41,12 +41,12 @@ const Home = () => {
 
       <div className="stats bg-base-100 border-base-300 border">
         <div className="stat">
-          <div className="stat-title">useEffect Example</div>
-          <div className="stat-value">useEffect()</div>
+          <div className="stat-title">useRef Example</div>
+          <div className="stat-value">useRef()</div>
           <div className="stat-actions">
             <button
               onClick={() => {
-                navigate("/use-effect");
+                navigate("/use-ref");
               }}
               className="btn btn-xs btn-success"
             >

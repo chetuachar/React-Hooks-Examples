@@ -7,7 +7,7 @@ const UseEffectExample = () => {
     setTimeout(() => {
       setCount((prev) => prev + 1);
     }, 2000);
-  }, [count]);
+  }, [increment]);
   return (
     <div className="flex flex-col h-screen justify-center items-center gap-2">
       <div>
