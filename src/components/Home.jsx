@@ -16,7 +16,7 @@ const Home = () => {
               }}
               className="btn btn-xs btn-success"
             >
-              Go Page
+              Goto Page
             </button>
           </div>
         </div>
@@ -24,10 +24,34 @@ const Home = () => {
 
       <div className="stats bg-base-100 border-base-300 border">
         <div className="stat">
-          <div className="stat-title">Account balance</div>
-          <div className="stat-value">$89,400</div>
+          <div className="stat-title">useEffect Example</div>
+          <div className="stat-value">useEffect()</div>
           <div className="stat-actions">
-            <button className="btn btn-xs btn-success">Add funds</button>
+            <button
+              onClick={() => {
+                navigate("/use-effect");
+              }}
+              className="btn btn-xs btn-success"
+            >
+              Goto Page
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div className="stats bg-base-100 border-base-300 border">
+        <div className="stat">
+          <div className="stat-title">useEffect Example</div>
+          <div className="stat-value">useEffect()</div>
+          <div className="stat-actions">
+            <button
+              onClick={() => {
+                navigate("/use-effect");
+              }}
+              className="btn btn-xs btn-success"
+            >
+              Goto Page
+            </button>
           </div>
         </div>
       </div>
