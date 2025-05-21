@@ -7,7 +7,7 @@ const Home = () => {
   const { phone, name } = useContext(AppContext);
   return (
     <div className="flex flex-col justify-center items-center m-2">
-      <div className="grid grid-flow-row grid-cols-4 gap-4">
+      <div className="grid grid-flow-row grid-cols-3 gap-4">
         <div className="stats bg-base-100 border-base-300 border">
           <div className="stat">
             <div className="stat-title">useState Example</div>
@@ -101,6 +101,23 @@ const Home = () => {
               <button
                 onClick={() => {
                   navigate("/use-reducer");
+                }}
+                className="btn btn-xs btn-success"
+              >
+                Goto Page
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div className="stats bg-base-100 border-base-300 border">
+          <div className="stat">
+            <div className="stat-title">useLayoutEffect Example</div>
+            <div className="stat-value">useLayoutEffect()</div>
+            <div className="stat-actions">
+              <button
+                onClick={() => {
+                  navigate("/use-layouteffect");
                 }}
                 className="btn btn-xs btn-success"
               >

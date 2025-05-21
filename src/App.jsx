@@ -6,6 +6,7 @@ import UseRefExample from "./components/UseRefExample";
 import UseMemoExample from "./components/UseMemoExample";
 import UseCallbackExample from "./components/UseCallbackExample";
 import UseReducerExample from "./components/UseReducerExample";
+import UseLayoutEffectExample from "./components/UseLayoutEffectExample";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/use-memo" element={<UseMemoExample />} />
         <Route path="/use-callback" element={<UseCallbackExample />} />
         <Route path="/use-reducer" element={<UseReducerExample />} />
+        <Route path="/use-layouteffect" element={<UseLayoutEffectExample />} />
       </Routes>
     </BrowserRouter>
   );
