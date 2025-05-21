@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 const Home = () => {
   const navigate = useNavigate();
+  const { phone, name } = useContext(AppContext);
   return (
-    <div className="flex justify-center items-center m-2">
+    <div className="flex flex-col justify-center items-center m-2">
       <div className="grid grid-flow-row grid-cols-4 gap-4">
         <div className="stats bg-base-100 border-base-300 border">
           <div className="stat">
@@ -90,6 +92,11 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      {/* footer  */}
+      <div>
+        <h2>Name : {name}</h2>
+        <h2>Phone : {phone} </h2>
       </div>
     </div>
   );
