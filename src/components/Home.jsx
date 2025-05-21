@@ -92,7 +92,25 @@ const Home = () => {
             </div>
           </div>
         </div>
+
+        <div className="stats bg-base-100 border-base-300 border">
+          <div className="stat">
+            <div className="stat-title">useReducer Example</div>
+            <div className="stat-value">useReducer()</div>
+            <div className="stat-actions">
+              <button
+                onClick={() => {
+                  navigate("/use-reducer");
+                }}
+                className="btn btn-xs btn-success"
+              >
+                Goto Page
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
       {/* footer  */}
       <div>
         <h2>Name : {name}</h2>
